@@ -1,0 +1,20 @@
+
+// Миксины
+//mixin navLink(link, name)
+//    li
+//        a(href=link).nav-link=name
+
+header
+    .header
+        ul.nav
+            // Циклы в pug
+            for i in [1, 2, 3, 4]
+                li
+                    a(href='').nav-link=i
+
+
+            // Использование миксинов
+            //+navLink('#', 1)
+            //+navLink('#', 2)
+            //+navLink('#', 3)
+            //+navLink('#', 4)
